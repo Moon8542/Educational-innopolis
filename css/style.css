@@ -211,10 +211,10 @@ h2 {
 }
 
 .student img {
-/* height: auto; */
-object-position: bottom;
-object-fit: contain;
-min-height: 270px;
+  /* height: auto; */
+  object-position: bottom;
+  object-fit: contain;
+  min-height: 270px;
 }
 
 /* .student > img {
@@ -251,9 +251,9 @@ min-height: 270px;
 }
 
 .contact-heading {
-max-width: 820px;
-margin-left: auto;
-margin-right: auto;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-text {
