@@ -264,13 +264,22 @@ h2 {
   line-height: 1.16;
 }
 
-.contact-map {
+/* .contact-map {
   display: block;
   width: 100%;
   max-width: 1268px;
   height: 370px;
   margin: 0 auto;
   margin-bottom: 15px;
+} */
+
+.contact-map {
+box-sizing: border-box;
+width: 100%;
+max-width: 1300px;
+margin: 0 auto;
+margin-bottom: 15px;
+padding: 0 16px;
 }
 
 .contact-address,
