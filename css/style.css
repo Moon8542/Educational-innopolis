@@ -8,7 +8,8 @@
 }
 
 .header {
-  /* position: relative; */
+  position: fixed;
+  top: 0;
   box-sizing: border-box;
   width: 100%;
   max-width: 1300px;
@@ -20,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgba(33, 59, 126, 1);
+  z-index: 1;
 }
 
 .site-logo {
@@ -63,7 +65,7 @@
   align-items:center;
   width: 153px;
   min-height: 50px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -76,7 +78,7 @@
   display: none;
   position: fixed;
   z-index: 2;
-  bottom: left;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, 100%);
   box-sizing: border-box;
@@ -129,6 +131,7 @@
   margin: 0 auto;
   /* padding: 0 2vw; */
   flex-grow: 1;
+  margin-top: 100px;
 }
 
 .class-photo {
@@ -193,8 +196,20 @@ h2 {
   color: rgba(207, 85, 16, 1);
 }
 
+.student-header {
+  margin-bottom: 37px;
+}
+
 .main-students {
   max-width: 1202px;
+}
+
+.student-heading {
+  max-width: 1202px;
+  padding: 0 13px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  box-sizing: border-box;
 }
 
 .students {
@@ -202,20 +217,24 @@ h2 {
   flex-wrap: wrap;
   max-width: 1202px;
   gap: 50px;
+  padding: 0 13px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-/* .student-link {
+.student-link {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-} */
+}
 
-/* .student:nth-child(2) {
-  background-color: rgba(179, 191, 198, 1);
-}   - не работает */
+.student:nth-child(7) {
+  background-color: rgb(15, 134, 202);
+}
 
 .student {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,6 +249,24 @@ h2 {
   .student-link {
     max-width: calc(100% / 2);
   }
+}
+
+.new {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  right: -13px;
+  display: flex;
+  padding: 2px 5px;
+  border-radius: 20px;
+  background-color: rgba(58, 168, 40, 1);
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
 }
 
 .student img {
@@ -256,7 +293,7 @@ h2 {
 }
 
 .about-text {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
