@@ -267,12 +267,12 @@ h2 {
   background-color: rgb(15, 134, 202);
 }
 
-.student-link {
+/* .student-link {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-}
+} */
 
 .student {
   position: relative;
