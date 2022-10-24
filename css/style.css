@@ -7,15 +7,26 @@
   margin: 0;
 }
 
-.header {
+.popup-backdrop::after {
+  content: '';
   position: fixed;
   top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header {
   box-sizing: border-box;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 16px;
   min-height: 80px;
+  position: fixed;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -95,6 +106,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.login-input::placeholder 
+.password-input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .login-form > input {
@@ -187,6 +207,14 @@ h2 {
   margin: 0;
 }
 
+.icon::after {
+  content:'\201D' ;
+}
+
+.icon::before {
+  content:'\201C';
+}
+
 .intro-text > strong {
   font-weight: 700;
 }
@@ -212,6 +240,19 @@ h2 {
   box-sizing: border-box;
 }
 
+.student-heading::after {
+  content: '👧 👦';
+}
+
+/* .student-heading::after {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url(../img/avatar-m.svg);
+  background-repeat: no-repeat;
+} */
+
 .students {
   display: flex;
   flex-wrap: wrap;
@@ -222,15 +263,15 @@ h2 {
   margin: 0 auto;
 }
 
+.student:nth-child(7) {
+  background-color: rgb(15, 134, 202);
+}
+
 .student-link {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-}
-
-.student:nth-child(7) {
-  background-color: rgb(15, 134, 202);
 }
 
 .student {
