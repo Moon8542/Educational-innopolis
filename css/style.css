@@ -150,7 +150,7 @@
   width: 100%;
   max-width: 911px;
   margin: 0 auto;
-  /* padding: 0 2vw; */
+  padding: 0 2vw;
   flex-grow: 1;
   /* margin-top: 100px; */
   margin-bottom: 30px;
