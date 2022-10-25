@@ -25,7 +25,7 @@
   margin: 0 auto;
   padding: 0 16px;
   min-height: 80px;
-  position: fixed;
+  position: relative;
   top: 0;
   display: flex;
   flex-wrap: wrap;
@@ -87,9 +87,9 @@
 
 .login-popup {
   display: none;
-  position: fixed;
+  position: absolute;
   z-index: 2;
-  bottom: 0;
+  /* bottom: 0; */
   left: 50%;
   transform: translate(-50%, 100%);
   box-sizing: border-box;
@@ -205,14 +205,20 @@ h2 {
 
 .intro-aside > blockquote {
   margin: 0;
-}
-
-.icon::after {
-  content:'\201D' ;
+  position: relative;
 }
 
 .icon::before {
-  content:'\201C';
+  content:'\275D';
+  position: absolute;
+  left: -25px;
+  top: -5px;
+}
+
+.icon::after {
+  content:'\275E';
+  position: absolute;
+  right: -20px;
 }
 
 .intro-text > strong {
