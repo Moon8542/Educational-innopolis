@@ -89,7 +89,7 @@
   display: none;
   position: absolute;
   z-index: 2;
-  /* bottom: 0; */
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, 100%);
   box-sizing: border-box;
@@ -211,14 +211,14 @@ h2 {
 .icon::before {
   content:'\275D';
   position: absolute;
-  left: -25px;
+  left: -28px;
   top: -5px;
 }
 
 .icon::after {
   content:'\275E';
   position: absolute;
-  right: -20px;
+  right: -24px;
 }
 
 .intro-text > strong {
